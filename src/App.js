@@ -8,9 +8,7 @@ const App = () => {
   const [profiles, setProfiles] = React.useState([]);
 
   const addNewProfile = profileData => {
-    setProfiles(prevState => ({
-      profiles: [...prevState.profiles, profileData]
-    }));
+    setProfiles([...profiles, profileData]);
   };
 
   return (
